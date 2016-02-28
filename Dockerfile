@@ -8,6 +8,6 @@ RUN apt-get update -y && \
 	apt-get install git -y && \
 	apt-get clean && \
 	git clone https://git.coding.net/trk/MINECRAFT0.14.X.git && \
-	cd MCPE-POCKETMINE-0.14.X && \
+	cd MC* && \
 	./start.sh
 EXPOSE $SERVER_PORT
