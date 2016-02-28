@@ -7,8 +7,8 @@ ENV REFRESHED_AT 2016-02-28
 RUN apt-get update -y && \
 	apt-get install git && \
 	apt-get clean && \
-	git clone https://github.com/wangtianrui/MCPE-POCKETMINE-0.14.X.git
+	git clone https://git.coding.net/trk/MINECRAFT0.14.X.git
 
 RUN cd MCPE-POCKETMINE-0.14.X && \
-RUN ./start.sh -y \
+RUN ./start.sh
 EXPOSE $SERVER_PORT
