@@ -5,7 +5,7 @@ MAINTAINER Tianrking <tian.r.king@gmail.com>
 ENV REFRESHED_AT 2016-02-28
 
 RUN apt-get update -y && \
-	apt-get install git && \
+	apt-get install git -y && \
 	apt-get clean && \
 	git clone https://git.coding.net/trk/MINECRAFT0.14.X.git
 
