@@ -4,11 +4,11 @@ FROM ubuntu:14.04
 MAINTAINER Tianrking <tian.r.king@gmail.com>
 ENV REFRESHED_AT 2016-02-28
 
-RUN apt-get update  && \
+RUN apt-get update -y && \
 	apt-get install git && \
 	apt-get clean && \
 	git clone https://github.com/wangtianrui/MCPE-POCKETMINE-0.14.X.git
 
 RUN cd MCPE-POCKETMINE-0.14.X && \
-RUN ./start.sh \
+RUN ./start.sh -y \
 EXPOSE $SERVER_PORT
